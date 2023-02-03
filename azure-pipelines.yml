@@ -28,7 +28,7 @@ steps:
 - task: Go@0
   inputs:
     command: 'build'
-    arguments: '-d'
+    arguments: '-o'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
 - task: CopyFiles@2
   inputs:
